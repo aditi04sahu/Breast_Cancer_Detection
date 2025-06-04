@@ -20,7 +20,8 @@ suitable for effective deep learning training and reflecting real clinical varia
 5. Working of the Project and Description of All Models
 
 The core workflow:
-a) Data Preprocessing- Images are resized, normalized, and augmented to improve model robustness.
+
+Data Preprocessing- Images are resized, normalized, and augmented to improve model robustness.
 b) Model Training- Several CNN architectures were trained and compared:
   Custom CNN- A simple convolutional neural network designed from scratch.
   ResNet (Residual Network)- A deep CNN with skip connections to improve gradient flow.
