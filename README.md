@@ -29,7 +29,7 @@ Grad-CAM was chosen to address the black-box nature of deep learning models. Whi
    
 Implementing Grad-CAM enhanced the interpretability of the results without compromising classification accuracy. It enabled visualization of decision-making areas, providing insight into model behavior and identifying potential failure cases. It also helped in debugging and refining the model by revealing if irrelevant image regions influenced predictions. Overall, Grad-CAM increased the project’s clinical usability by bridging AI predictions with human expert validation.
 
-9. Final Output and Conclusion
+8. Final Output and Conclusion
 
 The final output is a notebook that takes breast ultrasound images as input and predicts whether the image shows benign or malignant tissue. It also outputs Grad-CAM heatmaps to highlight suspicious regions for the user.
 
