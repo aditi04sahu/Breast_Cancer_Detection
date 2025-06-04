@@ -19,29 +19,18 @@ suitable for effective deep learning training and reflecting real clinical varia
 
 5. Working of the Project and Description of All Models
 
-The core workflow:
+The core workflow involves preprocessing images by resizing, normalizing, and augmenting them to enhance model robustness. Multiple CNN architectures—Custom CNN, ResNet, and EfficientNet—were trained and compared to classify images as benign or malignant. Models were evaluated using accuracy, precision, recall, F1-score, and ROC-AUC. Grad-CAM was applied to generate heatmaps highlighting key regions that influenced the classification, improving interpretability.
 
-Data Preprocessing- Images are resized, normalized, and augmented to improve model robustness.
-b) Model Training- Several CNN architectures were trained and compared:
-  Custom CNN- A simple convolutional neural network designed from scratch.
-  ResNet (Residual Network)- A deep CNN with skip connections to improve gradient flow.
-  EfficientNet- A CNN architecture optimized for performance with fewer parameters.
-Each model outputs a binary classification: benign or malignant.
-Model Evaluation- Models are assessed using accuracy, precision, recall, F1-score, and ROC-AUC.
-Interpretability with Grad-CAM- Grad-CAM generates heatmaps over input images to highlight important regions influencing the classification.
+6. Why I Chose Grad-CAM
 
-8. Why I Chose Grad-CAM
-Grad-CAM was chosen to address the black-box nature of deep learning models. While CNNs can achieve high accuracy, their lack of transparency limits clinical trust. Grad-CAM provides a visual explanation by 
-producing heatmaps that localize regions in the image responsible for the model’s decision. This helps doctors validate whether the model focuses on medically relevant features like tumors or suspicious tissue, 
-increasing trust and facilitating model acceptance in medical practice.
+Grad-CAM was chosen to address the black-box nature of deep learning models. While CNNs can achieve high accuracy, their lack of transparency limits clinical trust. Grad-CAM provides a visual explanation by producing heatmaps that localize regions in the image responsible for the model’s decision. This helps doctors validate whether the model focuses on medically relevant features like tumors or suspicious tissue, increasing trust and facilitating model acceptance in medical practice.
 
-9. Effect of Implementing Grad-CAM on Results
-Implementing Grad-CAM enhanced the interpretability of the results without compromising classification accuracy. It enabled visualization of decision-making areas, providing insight into model behavior and 
-identifying potential failure cases. It also helped in debugging and refining the model by revealing if irrelevant image regions influenced predictions. Overall, Grad-CAM increased the project’s clinical usability
-by bridging AI predictions with human expert validation.
+7. Effect of Implementing Grad-CAM on Results
+   
+Implementing Grad-CAM enhanced the interpretability of the results without compromising classification accuracy. It enabled visualization of decision-making areas, providing insight into model behavior and identifying potential failure cases. It also helped in debugging and refining the model by revealing if irrelevant image regions influenced predictions. Overall, Grad-CAM increased the project’s clinical usability by bridging AI predictions with human expert validation.
 
-10.  Final Output and Conclusion
-The final output is a notebook that takes breast ultrasound images as input and predicts whether the image shows benign or malignant tissue. It also outputs Grad-CAM heatmaps to highlight suspicious regions for the
-user.
+9. Final Output and Conclusion
+
+The final output is a notebook that takes breast ultrasound images as input and predicts whether the image shows benign or malignant tissue. It also outputs Grad-CAM heatmaps to highlight suspicious regions for the user.
 
 
